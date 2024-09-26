@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Class Form</title>
+</head>
+
+<style>
+    div#background {
+        background-color: silver;
+        border-color: lime;
+        border-width: 3px;
+        border-style: solid;
+        margin: 10px auto;
+        width: 60%;
+        padding-left: 10px;
+    }
+
+    p {
+        font-family: arial;
+        font-size: medium;
+    }
+</style>
+
+<body>
+
+    <h1>My Class Form</h1>
+
+    <div id="background">
+        <form method="post" actions="">
+            <p>
+                Please Enter Your Name:
+                <input type="text" name="myname" size="20" placeholders="Enter Name" maxlength="40" placeholder="Type Here..."/>
+            </p>
+
+            <p>
+                Please select your class:
+                <select name="class">
+                    <option value="selectone">(select one)</option>
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophomore">Sophomore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </p>
+
+            <p>
+                Please select your grade:
+                <input type="radio" name="grade" value="A" /> A Grade
+                <input type="radio" name="grade" value="B" /> B Grade
+                <input type="radio" name="grade" value="C" /> C Grade
+                <input type="radio" name="grade" value="D" /> D Grade
+            </p>
+
+            <p>
+                Please select the magazines you read: </br>
+                <input id="wsj" type="checkbox" name="magazine" /> Wall Street Journal </br>
+                <input id="bg" type="checkbox" name="magazine" /> Boston Globe </br>
+                <input id="nyt" type="checkbox" name="magazine" /> New York Times </br>
+            </p>
+
+            <p>
+                Please enter any suggestions for the course: </br>
+                <textarea rows="10" cols="47" name="suggestions" placeholder="Write Here..."></textarea>
+            </p>
+
+            <p>
+                <input type="submit" name="submit" value="Submit"/>
+                <input type="reset" name="reset" value="Reset"/>
+            </p>
+    </div>
+    </form>
+
+
+</body>
+
+</html>
