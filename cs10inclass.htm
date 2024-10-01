@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia and Stupid CSS</title>
+
+    <style>
+        img#b {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 25%;
+            border-radius: 50%;
+            margin-top:5%;
+        }
+
+        @keyframes dizzy {
+            from {transform:rotate(0deg)}
+            to {transform:rotate(360deg)}
+        }
+
+        .beaverturn {
+            animation-name:dizzy;
+            animation-duration:10s;
+            animation-iteration-count:infinite;
+            animation-timing-function:ease-out;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Here is adding an Audio File - Glitch Short Break</h1>
+    <audio autoplay controls loop>
+        <source src="glitch-short-break-1.mp3" type="audio/mp3" />
+    </audio>
+
+    <h1> Adding video file here </h1>
+    <video autoplay controls loop>
+        <source src="TestVideoByFisk-1.mp4" type="video/mp4" />
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ruw7Lb2S5I4?si=0aQnVq2CfvfPPo97"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr />
+
+    <img id="b" class="beaverturn" src="beaver.jpg" alt="beaver image" title="Go Babson!" />
+
+</body>
+
+</html>
