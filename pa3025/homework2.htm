@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Homework 2 - Form within a Table</title>
+
+	<style>
+		/* Your styles go here */
+		form {
+			background: url(brick.gif);
+			margin: 40px 200px 40px 200px;
+			padding-bottom: 40px;
+			padding-top: 40px;
+		}
+
+		table {
+			font-family: Arial;
+			font-size: 20px;
+			text-align: center;
+			width: 60%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		table,
+		td {
+			border: 2px solid black;
+		}
+
+		caption {
+			font-family: Lucida Grande;
+			font-size: 2em;
+			color: navy;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.firstcol {
+			width: 35%;
+		}
+
+		.thirdcol {
+			width: 25%;
+		}
+
+		img {
+			width: 45%;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		.submit {
+			height: 30px;
+			background-color: green;
+		}
+
+		.reset {
+			height: 30px;
+			background-color: yellow;
+		}
+	</style>
+
+	<script>
+		/* Your JavaScript goes here */
+
+	</script>
+</head>
+
+<body>
+	<!-- Your HTML goes here -->
+	<form method="post" actions="">
+		<table>
+			<caption>Catalog of Sweaters</caption>
+
+			<tr id="toprow">
+				<td class="firstcol"> Product Image</td>
+				<td class="secondcol"> Product Price</td>
+				<td class="thirdcol"> Product Selection</td>
+				<td class="fourthcol"> Product Quantity</td>
+			</tr>
+
+			<tr id="redrow">
+				<td class="firstcol"> <img src="redsweater.jpg" alt="Red Image" title="Red Sweater" width="300" /></td>
+				<td class="secondcol"> $35.00</td>
+				<td class="thirdcol"> <input type="radio" name="selection" value="Red" /> Red Sweater</td>
+				<td class="fourthcol"> Quantity:
+					<input type="text" name="quantity" size="20" placeholders="Quantity" maxlength="40"
+						placeholder="Type Here..." />
+				</td>
+			</tr>
+
+			<tr id="bluerow">
+				<td class="firstcol"> <img src="bluesweater.jpg" alt="Blue Image" title="Blue Sweater" width="300" />
+				</td>
+				<td class="secondcol"> $45.00</td>
+				<td class="thirdcol"> <input type="radio" name="selection" value="Blue" /> Blue Sweater</td>
+				<td class="fourthcol"> Quantity:
+					<input type="text" name="quantity" size="20" placeholders="Quantity" maxlength="40"
+						placeholder="Type Here..." />
+				</td>
+			</tr>
+			<tr id="whiterow">
+				<td class="firstcol"> <img src="whitesweater.jpg" alt="White Image" title="White Sweater" width="300" />
+				</td>
+				<td class="secondcol"> $30.00</td>
+				<td class="thirdcol"> <input type="radio" name="selection" value="White" /> White Sweater</td>
+				<td class="fourthcol"> Quantity:
+					<input type="text" name="quantity" size="20" placeholders="Quantity" maxlength="40"
+						placeholder="Type Here..." />
+				</td>
+			</tr>
+		</table>
+		<p>
+			<input class="submit" type="submit" name="submit" value="Submit Selections" />
+			<input class="reset" type="reset" name="reset" value="Clear Selections" />
+		</p>
+
+	</form>
+
+
+</body>
+
+</html>
