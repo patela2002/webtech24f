@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>Aria's Quiz 2</title> <!-- No credit if you do, -1 if you do not -->
+        <style type="text/css">
+         h1#insta {
+            font-family: Arial;
+            color: yellow;
+            background: url(insta.jpg);
+            margin-right: 200px;
+            margin-left: 200px;
+            text-align: center;
+         }
+         
+         form {
+            background-color: silver;
+            color: navy;
+            font-family: Arial;
+            margin-right: 300px;
+            margin-left: 300px;
+            padding-left: 100px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+         }
+
+         p#name {
+            color: orangered;
+         }
+
+         li#star {
+            list-style: url(star.gif); 
+         }
+
+         ol {
+            list-style-type: lower-greek;
+         }
+        
+        </style>
+        
+    </head>
+
+    <body>
+	    <!-- Your HTML goes here -->
+        <h1 id="insta">About Instagram</h1> (18 points)
+        <!-- The title, About Instagram must use h1 tag -->
+        <!-- It uses Arial font, yellow color. (1) -->
+        <!-- It must have the image insta.jpg as the background. (2)-->
+        <!-- There must be a 200px (white) space to the left and right of the title(1)-->
+        
+        <form>
+            <p id="name">
+                Your Name:
+                <input type="text" name="myname" size="20" placeholders="Enter Name" maxlength="40" placeholder="Type Here..."/>
+            </p>
+
+            <p>
+                Do you like Instagram:
+                <input type="radio" name="like" value="Yes" /> Yes
+                <input type="radio" name="like" value="No" /> No
+            </p>
+
+            <p id="name">
+                How many times a day do you access Instagram:
+                <select name="class">
+                    <option value="selectone">(select one)</option>
+                    <option value="100">100</option>
+                    <option value="50">50</option>
+                    <option value="25">25</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" name="submit" value="Submit Data"/>
+                <input type="reset" name="reset" value="Clear Data"/>
+            </p>
+
+        </form>
+
+        <!-- Below the title, construct the form described below (6)--> 
+        <!-- 1. The form has a text box to capture your name - size is 20 -->
+        <!-- 2. The form has a radio button to capture whether you like -->
+        <!--    Instagram. Yes and No options. -->
+        <!-- 3. The form has a dropdown to see how many times a day you access -->
+        <!--    Instagram. The three values are 100, 50, and 25. -->
+        <!-- 4. The form has a Submit Data and a Clear Data button to submit -->
+        <!--    and reset the form data respectively. -->
+        <!--    The form has a silver background, navy font, arial. (2)-->
+        <!-- 5. The words "Your Name" and "How many times you access Instagram"
+                must be in orangered color font. (1)-->
+        <!--    The form has a 300px white space to the right and left.(1)-->
+        <!--    The form has a 100px silver space to the left. (1)-->
+        <!--    The form has a 50px silver space to the top and bottom. (2)-->
+            
+        <!-- For the last 7 points do the following: -->
+        <!-- Create a nested list using the data given.-->
+        <!-- The outer list must be unordered -(1)-->
+        <!-- It must use the image star.gif as the bullet. (2)-->
+        <!-- The inner list must be ordered with small greek numbering.(2)-->
+        <!-- This h1, which I have already tagged, must not have any background or color. -->
+        <!-- No styles needed. In other words, don't touch it. -->
+
+        <h1> Courses offered in Babson </h1>
+            
+        <ul>
+            <li id="star">Management Courses</li>
+            <ol>
+                <li>FME</li>
+                <li>SME</li>
+            </ol>
+            <li id="star">Liberal Arts Courses</li>
+            <ol>
+                <li>FCI</li>
+                <li>Critical Race</li> 
+            </ol>
+        </ul>
+    
+    </body>
+</html>
