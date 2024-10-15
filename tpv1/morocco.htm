@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morocco</title>
+
+    <style>
+        div#banner {
+                    background:url(header.jpeg);
+                    padding: 4%;
+                }
+        
+                h1#heading {
+                    color: rgb(138, 193, 161);
+                    font-family: Arial;
+                    font-weight: bold;
+                    text-align: center;
+                }
+        
+                /* Start of the menu styles */
+                .topnav {
+                    background-color: rgb(248, 224, 254);
+                    overflow: hidden;
+                    font-family: 'Lucida Handwriting';
+                }
+        
+                .topnav a {
+                    float: left;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 40px;
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+        
+                .active {
+                    background-color: rgb(239, 196, 250);
+                    color: white;
+                }
+        
+                .dropdown {
+                    float: left;
+                    overflow: hidden;
+                }
+        
+                .dropdown .dropdownbutton {
+                    font-size: 1em;
+                    border: none;
+                    outline: none;
+                    color: black;
+                    padding: 14px 40px;
+                    font-family: inherit;
+                    background-color: inherit;
+                    margin: 0;
+                }
+        
+                .dropdowncontent {
+                    position: absolute;
+                    display: none;
+                    background-color: white;
+                    z-index: 1;
+                }
+        
+                .dropdown:hover .dropdowncontent {
+                    display: block;
+                }
+        
+                .dropdowncontent a {
+                    float: none;
+                    display: block;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: 0.75em;
+                }
+        
+                .topnav a:hover,
+                .dropdown:hover .dropdownbutton {
+                    background-color: rgb(173, 138, 182);
+                    color: black;
+                }
+        
+                .dropdowncontent a:hover {
+                    background-color: lightgray;
+                    color: black;
+                }
+        
+                .topnav .icon {
+                    display: none;
+                }
+        
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                }
+        
+                .about {
+                    width: 27%;
+                    margin: 3%;
+                    text-align: justify;
+                }
+        
+                @media screen and (max-width:750px)
+                        {
+                            .row{flex-direction:column;}
+                            .about{width:80%; margin-right:auto; margin-left:auto;}
+                        }
+        
+                @media screen and (max-width: 750px) {
+        
+                    .topnav a:not(:first-child),
+                    .dropdown .dropdownbutton {
+                        display: none;
+                    }
+        
+                    .topnav a.icon {
+                        float: right;
+                        display: block;
+                    }
+                }
+        
+                @media screen and (max-width: 750px) {
+                    .topnav.responsive {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .icon {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+        
+                    .topnav.responsive a {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                    }
+        
+                    .topnav.responsive .dropdown {
+                        float: none;
+                    }
+        
+                    .topnav.responsive .dropdowncontent {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .dropdown .dropdownbutton {
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+            </style>
+        
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("mytopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+</head>
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+    
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+                
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <p>
+        morocco 
+
+feb 20th -land 19:05
+- [ ] head to riad
+- [ ] dinner at riad or near by
+    - [ ] ask front desk for where
+
+feb 21st
+- [ ] brunch @ le jardin at 12 PM
+- [ ] ben youssef madrasa (shoulders must be covered) 
+<img src="madrasa.jpg" alt="Ben Youssef" title="Ben Youssef Madrasa" width="300">
+- [ ] souk summarize
+<img src="souks.JPG" alt="Souk Summarize" title="Souk Summarize" width="300">
+<img src="spices.JPG" alt="Spices in Souk" title="Spice Stand in Souk Summarize" width="300">
+- [ ] jemaa el-fnaa - main square/market
+- [ ] sunset dinner and drinks @ l’mida at 7 PM
+
+
+
+
+feb 22nd 
+- [ ] breakfast at bacha coffee
+- [ ] jardin majorelle 
+<img src="lejardin.JPG" alt="Le Jardin" title="Le Jardin Majorelle" width="300">
+- [x] dinner @ comptoir darna @ 7:30 PM
+<img src="comptoir.JPG" alt="Comptoir Darna" title="Comptoir Darna at Night" width="300">
+
+feb 23rd 
+- [ ] leave for desert
+    - [ ] 50 min drive 
+    - [ ] aim to leave at 12
+- [ ] welcome drink at campsite @ 5 PM (free)
+- [ ] camel ride in desert @ 6 PM
+<img src="agafay.JPG" alt="Camels in Agafay" title="Camel Riding in Agafay Desert">
+traditional live music at campsite @ 7:30
+
+feb 24th -leave @10:30 aM
+
+extra places
+- [ ] Saadian Tombs
+- [ ] Koutoubia Mosque
+- [ ] Bahia Palace
+
+extra dinner places
+- [ ] la trattoria
+- [ ] l’mida
+- [ ] le salama
+- [ ] comptoir darna (belly dancing and fun shit)
+- [ ] cafes des epices
+
+    </p>
+
+</body>
+</html>

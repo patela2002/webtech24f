@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Aria's Travel Blog - Version 1</title>
+
+    <style>
+div#banner {
+            padding: 4%;
+            background-image: url(header.png);
+        }
+
+        h1#heading {
+            color: rgb(138, 193, 161);
+            font-family: Arial;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Start of the menu styles */
+        .topnav {
+            background-color: rgb(248, 224, 254);
+            overflow: hidden;
+            font-family: 'Lucida Handwriting';
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 40px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .active {
+            background-color: rgb(239, 196, 250);
+            color: white;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropdownbutton {
+            font-size: 1em;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 40px;
+            font-family: inherit;
+            background-color: inherit;
+            margin: 0;
+        }
+
+        .dropdowncontent {
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdowncontent {
+            display: block;
+        }
+
+        .dropdowncontent a {
+            float: none;
+            display: block;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            text-align: left;
+            font-size: 0.75em;
+        }
+
+        .topnav a:hover,
+        .dropdown:hover .dropdownbutton {
+            background-color: rgb(173, 138, 182);
+            color: black;
+        }
+
+        .dropdowncontent a:hover {
+            background-color: lightgray;
+            color: black;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .about {
+            width: 27%;
+            margin: 3%;
+            text-align: justify;
+        }
+
+        @media screen and (max-width:750px)
+                {
+                    .row{flex-direction:column;}
+                    .about{width:80%; margin-right:auto; margin-left:auto;}
+                }
+
+        @media screen and (max-width: 750px) {
+
+            .topnav a:not(:first-child),
+            .dropdown .dropdownbutton {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .topnav.responsive .dropdown {
+                float: none;
+            }
+
+            .topnav.responsive .dropdowncontent {
+                position: relative;
+            }
+
+            .topnav.responsive .dropdown .dropdownbutton {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+
+<script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById("mytopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</head>
+
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+    
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+                
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <audio autoplay loop>
+        <source src="background.mp3" type="audio/mp3" />
+    </audio>
+
+    <!--Add large image here with text on top-->
+
+    <!--Add homebase: mini about me, link to bigger about me-->
+
+    <!--This section will be Featured Destinations-->
+    <div class="row">
+        <div class="about">
+            <h1 id="featdest">Featured Destinations</h1>
+            <h2>Morocco</h2>
+            <p>
+                <img src="souks.JPG" alt="souks" title="Souk Summarize" usemap="#souks" width="300">
+                <map name="souks">
+                    <area shape="rect" coords="302,524,211,378" href="morocco.htm" alt="Souks">
+                </map>
+            Click on the middle of the image to find out more about travelling to Morocco!
+            </p>
+        </div>
+        <div class="about">
+            <h2>Budapest</h2>
+            <p>
+                Add large photo with title of Budapest page & link it
+            </p>
+        </div>
+        <div class="about">
+            <h2>Greece</h2>
+            <p>
+                Add large photo with title of Greece page & link it
+            </p>
+        </div>
+    </div>
+
+    <video controls loop width="300">
+        <source src="video.MOV" type="video/mp4"/>
+    </video>
+
+</body>
+
+</html>

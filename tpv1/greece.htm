@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greece</title>
+
+    <style>
+        div#banner {
+                    background:url(header.jpeg);
+                    padding: 4%;
+                }
+        
+                h1#heading {
+                    color: rgb(138, 193, 161);
+                    font-family: Arial;
+                    font-weight: bold;
+                    text-align: center;
+                }
+        
+                /* Start of the menu styles */
+                .topnav {
+                    background-color: rgb(248, 224, 254);
+                    overflow: hidden;
+                    font-family: 'Lucida Handwriting';
+                }
+        
+                .topnav a {
+                    float: left;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 40px;
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+        
+                .active {
+                    background-color: rgb(239, 196, 250);
+                    color: white;
+                }
+        
+                .dropdown {
+                    float: left;
+                    overflow: hidden;
+                }
+        
+                .dropdown .dropdownbutton {
+                    font-size: 1em;
+                    border: none;
+                    outline: none;
+                    color: black;
+                    padding: 14px 40px;
+                    font-family: inherit;
+                    background-color: inherit;
+                    margin: 0;
+                }
+        
+                .dropdowncontent {
+                    position: absolute;
+                    display: none;
+                    background-color: white;
+                    z-index: 1;
+                }
+        
+                .dropdown:hover .dropdowncontent {
+                    display: block;
+                }
+        
+                .dropdowncontent a {
+                    float: none;
+                    display: block;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: 0.75em;
+                }
+        
+                .topnav a:hover,
+                .dropdown:hover .dropdownbutton {
+                    background-color: rgb(173, 138, 182);
+                    color: black;
+                }
+        
+                .dropdowncontent a:hover {
+                    background-color: lightgray;
+                    color: black;
+                }
+        
+                .topnav .icon {
+                    display: none;
+                }
+        
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                }
+        
+                .about {
+                    width: 27%;
+                    margin: 3%;
+                    text-align: justify;
+                }
+        
+                @media screen and (max-width:750px)
+                        {
+                            .row{flex-direction:column;}
+                            .about{width:80%; margin-right:auto; margin-left:auto;}
+                        }
+        
+                @media screen and (max-width: 750px) {
+        
+                    .topnav a:not(:first-child),
+                    .dropdown .dropdownbutton {
+                        display: none;
+                    }
+        
+                    .topnav a.icon {
+                        float: right;
+                        display: block;
+                    }
+                }
+        
+                @media screen and (max-width: 750px) {
+                    .topnav.responsive {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .icon {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+        
+                    .topnav.responsive a {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                    }
+        
+                    .topnav.responsive .dropdown {
+                        float: none;
+                    }
+        
+                    .topnav.responsive .dropdowncontent {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .dropdown .dropdownbutton {
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+            </style>
+        
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("mytopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+</head>
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+    
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+                
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <p>
+        greece
+
+
+tues 4/9 - get to santorini @ 7:30 PM / 8:55 PM
+- [ ] dinner nearby
+- [ ] hot tub soak 💆🏽‍♀️
+
+weds 4/10
+- [ ] walk around fira
+- [ ] beach
+    - [ ] perissa beach — 24 min drive
+    - [ ] ammoudi - 25 min drive 
+- [ ] sunset boat trip @ 3 PM
+    - [ ] dinner on boat
+- [ ] drinks at kaliya @ 10 PM
+
+<img src="boatsantorini.JPG" alt="Santorini Boat" title="Boat Trip in Santorini" width="300">
+<img src="oia.JPG" alt="Oia" title="Famous Blue Buildings in Oia" width="300">
+
+thurs 4/11 - get to paros @ 6:50 PM
+- [ ] fira to oia morning hike 
+- [ ] stop at pitogyros in oia - taxi back
+- [ ] ferry to paros @ 3:45 PM
+- [ ] dinner in parikia - lots of nearby restaurants
+- [ ] walk around and shop in parikia
+
+fri 4/12 - go to antiparos
+- [ ] Take ferry from port @ from Pounda
+- [ ] explore town and cafes 
+- [ ] Bus to antiparos cave
+- [ ] Bus to Castle (Kastro) of Antiparos
+- [ ] Possible boat trip to Despotiko island 
+- [ ] Sunset at Sifneiko
+- [ ] Dinner @ SIFNEIKO CAFE or Samano Restaurant in Chora 8:30 PM
+
+sat 4/13
+- [ ] taxi to naousa
+- [ ] walk around shops 
+- [ ] food at fotis all day bar
+- [ ] dinner at sigi ik this @ 7:30 PM
+- [ ] go out
+    - [ ] sante cocktail bar
+    - [ ] come back - bar
+    - [ ] sommaripa - bar
+    - [ ] linardo - going out
+    - [ ] agouti - going out
+
+sun 4/14 - chill beach day
+- [ ] walk around parikia
+    - [ ] tserki bakery
+    - [ ] church of 100 doors
+    - [ ] byzantine museum
+- [ ] taxi to marcello
+- [ ] marcello beach bar
+
+<img src="parosbeach.JPG" alt="Beach" title="Our Beach in Paros" width="300">
+<img src="parosdinner.JPG" alt="Dinner" title="View from our Dinner" width="300">
+<img src="paroshotel.JPG" alt="Hotel" title="Mamma Mia Style Hotel" width="300">
+<img src="parosstreet.JPG" alt="Street" title="Naousa Street" width="300">
+
+
+mon 4/15 - get to mykonos @ 10:30 AM
+- [ ] train to mykonos @ 9:45 AM
+- [ ] lunch at souvlaki story or the liberty breakfast room
+- [ ] explore downtown mykonos & shop
+- [ ] dinner @
+- [ ] bar/go out
+    - [ ] scandinavian bar (might be closed)
+    - [ ] queen of mykonos
+
+tues 4/16 
+- [ ] beach:
+- [ ] drinks @belvedere rooftop bar or 54 cocktail bar & sunset lounge
+
+<img src="mykonos.JPG" alt="mykonos" title="Mykonos Views" width="300">
+<img src="grouppic.JPG" alt="the girls" title="The Girls in Mykonos" width="300">
+
+weds 4/17 - get to athens @ 8:05 PM
+- [ ] flight to athens @ 7:20 PM
+- [ ] dinner nearby - plaka area has restaurants 
+
+thurs 4/18
+- [ ] main sites
+    - [ ] ancient agora of athens
+    - [ ] hephaistos temple
+    - [ ] acropolis/parthenon
+    - [ ] temple of zeus 
+    - [ ] panathenaic stadium
+    - [ ] hadrian’s library
+- [ ] extra sites if time and mood permits
+    - [ ] likavitos
+    - [ ] philopappos hill - pretty sunset
+    - [ ] national garden 
+- [ ] dinner at dionysos zonar’s @ 7:30 PM
+- [ ] gazi area for going out 
+
+<img src="acropolis.JPG" alt="Acropolis" title="View inside the Acropolis" width="300">
+<img src="athens.JPG" alt="Athens" title="View of Athens" width="300">
+<img src="olympic.jpg" alt="Olympic Stadium" title="Oldest Olympic Stadium" width="300">
+<img src="mainpic.jpg" alt="The Girls pt. 2" title="My Friends and I in Athens" width="300">
+
+
+restaurants 
+
+santorini
+- kaliya - expensive good views
+- PK cocktail bar - fira
+- volkan pizza
+- thalami - oia 
+- mamma thira - lunch
+
+paros
+- sigi ithios - naousa
+- safran restaurant - naousa
+- yemeni - naousa 
+- glafkos - nausea
+
+mykonos
+- paraga beach 
+- @marinovaagg
+
+    </p>
+    
+</body>
+</html>

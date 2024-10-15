@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest</title>
+
+    <style>
+        div#banner {
+                    background:url(header.jpeg);
+                    padding: 4%;
+                }
+        
+                h1#heading {
+                    color: rgb(138, 193, 161);
+                    font-family: Arial;
+                    font-weight: bold;
+                    text-align: center;
+                }
+        
+                /* Start of the menu styles */
+                .topnav {
+                    background-color: rgb(248, 224, 254);
+                    overflow: hidden;
+                    font-family: 'Lucida Handwriting';
+                }
+        
+                .topnav a {
+                    float: left;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 40px;
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+        
+                .active {
+                    background-color: rgb(239, 196, 250);
+                    color: white;
+                }
+        
+                .dropdown {
+                    float: left;
+                    overflow: hidden;
+                }
+        
+                .dropdown .dropdownbutton {
+                    font-size: 1em;
+                    border: none;
+                    outline: none;
+                    color: black;
+                    padding: 14px 40px;
+                    font-family: inherit;
+                    background-color: inherit;
+                    margin: 0;
+                }
+        
+                .dropdowncontent {
+                    position: absolute;
+                    display: none;
+                    background-color: white;
+                    z-index: 1;
+                }
+        
+                .dropdown:hover .dropdowncontent {
+                    display: block;
+                }
+        
+                .dropdowncontent a {
+                    float: none;
+                    display: block;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: 0.75em;
+                }
+        
+                .topnav a:hover,
+                .dropdown:hover .dropdownbutton {
+                    background-color: rgb(173, 138, 182);
+                    color: black;
+                }
+        
+                .dropdowncontent a:hover {
+                    background-color: lightgray;
+                    color: black;
+                }
+        
+                .topnav .icon {
+                    display: none;
+                }
+        
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                }
+        
+                .about {
+                    width: 27%;
+                    margin: 3%;
+                    text-align: justify;
+                }
+        
+                @media screen and (max-width:750px)
+                        {
+                            .row{flex-direction:column;}
+                            .about{width:80%; margin-right:auto; margin-left:auto;}
+                        }
+        
+                @media screen and (max-width: 750px) {
+        
+                    .topnav a:not(:first-child),
+                    .dropdown .dropdownbutton {
+                        display: none;
+                    }
+        
+                    .topnav a.icon {
+                        float: right;
+                        display: block;
+                    }
+                }
+        
+                @media screen and (max-width: 750px) {
+                    .topnav.responsive {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .icon {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+        
+                    .topnav.responsive a {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                    }
+        
+                    .topnav.responsive .dropdown {
+                        float: none;
+                    }
+        
+                    .topnav.responsive .dropdowncontent {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .dropdown .dropdownbutton {
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+            </style>
+        
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("mytopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        
+        
+        
+        </script>
+
+</head>
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+    
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+                
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    <p>
+        wed - get there 11:10 pm
+- [x] get to hostel
+
+thurs
+- [ ] brunch 
+    - [ ] cookie beacon
+    - [ ] twenty six
+    - [x] circusz 
+
+- [ ] esceri flea market
+- [ ] st. stephen’s basilica 
+- [ ] danube river (see hungarian parliament building)
+- [ ] buda castle 
+- [ ] fisherman’s bastion
+- [ ] matthias church
+
+- [ ] dinner 
+    - [ ] caravan street food market 
+- [ ] proesecco boat tour @ 9
+- [x] club 🕺🏿
+    - [ ] szimpla kertz (ruins bars)
+    - [x] instant-fogas komplexum
+
+fri - head to prague 
+- [ ] brunch
+    - [ ] twenty six @ 11 am
+- [x] head to airport 12:30 flight at 2:30
+    </p>
+
+<img src="bastion.JPG" alt="Fisherman's Bastion" title="Aria at Fisherman's Bastion" width="500">
+<img src="boattour.JPG" alt="Boat Tour" title="Prosecco Boat Tour View" width="500">
+<img src="stcharles.JPG" alt="St. Charles" title="St. Charles Church" width="500">
+
+
+
+</body>
+</html>

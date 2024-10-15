@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edinburgh</title>
+    <style>
+        div#banner {
+                    background:url(header.jpeg);
+                    padding: 4%;
+                }
+        
+                h1#heading {
+                    color: rgb(138, 193, 161);
+                    font-family: Arial;
+                    font-weight: bold;
+                    text-align: center;
+                }
+        
+                /* Start of the menu styles */
+                .topnav {
+                    background-color: rgb(248, 224, 254);
+                    overflow: hidden;
+                    font-family: 'Lucida Handwriting';
+                }
+        
+                .topnav a {
+                    float: left;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 40px;
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+        
+                .active {
+                    background-color: rgb(239, 196, 250);
+                    color: white;
+                }
+        
+                .dropdown {
+                    float: left;
+                    overflow: hidden;
+                }
+        
+                .dropdown .dropdownbutton {
+                    font-size: 1em;
+                    border: none;
+                    outline: none;
+                    color: black;
+                    padding: 14px 40px;
+                    font-family: inherit;
+                    background-color: inherit;
+                    margin: 0;
+                }
+        
+                .dropdowncontent {
+                    position: absolute;
+                    display: none;
+                    background-color: white;
+                    z-index: 1;
+                }
+        
+                .dropdown:hover .dropdowncontent {
+                    display: block;
+                }
+        
+                .dropdowncontent a {
+                    float: none;
+                    display: block;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: 0.75em;
+                }
+        
+                .topnav a:hover,
+                .dropdown:hover .dropdownbutton {
+                    background-color: rgb(173, 138, 182);
+                    color: black;
+                }
+        
+                .dropdowncontent a:hover {
+                    background-color: lightgray;
+                    color: black;
+                }
+        
+                .topnav .icon {
+                    display: none;
+                }
+        
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                }
+        
+                .about {
+                    width: 27%;
+                    margin: 3%;
+                    text-align: justify;
+                }
+        
+                @media screen and (max-width:750px)
+                        {
+                            .row{flex-direction:column;}
+                            .about{width:80%; margin-right:auto; margin-left:auto;}
+                        }
+        
+                @media screen and (max-width: 750px) {
+        
+                    .topnav a:not(:first-child),
+                    .dropdown .dropdownbutton {
+                        display: none;
+                    }
+        
+                    .topnav a.icon {
+                        float: right;
+                        display: block;
+                    }
+                }
+        
+                @media screen and (max-width: 750px) {
+                    .topnav.responsive {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .icon {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+        
+                    .topnav.responsive a {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                    }
+        
+                    .topnav.responsive .dropdown {
+                        float: none;
+                    }
+        
+                    .topnav.responsive .dropdowncontent {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .dropdown .dropdownbutton {
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+            </style>
+        
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("mytopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+</head>
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+    
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+                
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <header>
+        <h1>My Travel Blog</h1>
+    </header>
+    <div class="container">
+        <h2>Edinburgh Eats</h2>
+        <table>
+            <tr>
+                <th>Restaurants</th>
+                <th>Brunch</th>
+                <th>Cafes</th>
+                <th>Bars</th>
+            </tr>
+            <tr>
+                <td>Maki & Ramen</td>
+                <td>Greenwoods</td>
+                <td>Waterstones Cafe</td>
+                <td>Alchemist</td>
+            </tr>
+            <tr>
+                <td>San Chuan</td>
+                <td>The Edinburgh Larder</td>
+                <td>The Milkman</td>
+                <td>Slug & Lettuce</td>
+            </tr>
+            <tr>
+                <td>Lady Libertine</td>
+                <td>The Botanist</td>
+                <td>Black Sheep Coffee</td>
+                <td>The Spence</td>
+            </tr>
+            <tr>
+                <td>Junk</td>
+                <td colspan="2">Southern Cross</td>
+                <td>Flight Club</td>
+            </tr>
+            <tr>
+                <td>Noto</td>
+                <td>Scran</td>
+                <td>Hideout Cafe</td>
+                <td>Finnegan's Pub</td>
+            </tr>
+        </table>
+    </div>
+
+    
+<h1>Edinburgh Places🏰🪄🤍</h1>
+    <p>
+
+<ul>
+<li>restaurants:</li>
+<ol>
+<li>nok’s kitchen on the castle- thai ✅</li>
+<li>scran on royal mile ✅</li>
+<li>>BABA- mediterranean ✅✨</li>
+<li>toast tea ✅ ✨</li>
+<li>vittoria on the bridge ✅</li>
+<li>luck yu- asian fusion ✅</li>
+<li>satoru ✅✨</li>
+<li>rice noodle bar ✅</li>
+<li>disshoom ✅</li>
+<li>Tattu ✅✨</li>
+<li>tipo- noto’s sister restaurant✅</li>
+<li>hope izakaya ✅</li>
+<li>kampong ah lee- malaysian ✅</li>
+<li>Brasserie prince ✅</li>
+<li>Mowgli ✅</li>
+</ol>
+</ul>
+
+Brunch
+- Le Monde ✅
+- The society ✅
+- eve - great brunch place ✅
+- hula- açaí bowl & brunch ✅
+
+cafe:
+- Love peace and coffee ✅
+- The Edinburgh coffee lounge ✅
+- fettle ✅
+- Press cafe ✅
+- Black Medicine Coffee Co. ✅
+- pang taiwanese food ✅
+
+bars/speakeasies:
+- drop kicks murphy- pub ✅
+- Lucky liquor co ✅
+- bon vivant ✅
+- tron - pub ✅
+- All bar one✅ ✨
+- The botanist ✅✨
+- The voodoo room✅✨
+
+shop:
+- harvey nichols ✅ 
+- john lewis ✅
+- 5th season vintage ✅
+- epoca vintage ✅
+- armstrong vintage
+- morning tea vintage ✅
+- stockbridge- boutique shops district ✅
+- perre handmade jewelry ✅
+- handbag heaven exchange- vintage designers ✅
+- swish victoria street- jelly cat store ✅
+
+study spaces
+- law library ✅
+- business school study hub ✅
+- main library ✅
+- college of art ✅
+
+Things to do:
+- Arthur’s seat ✅
+- Greyfriar Bobby ✅
+- Walk in Dean village ✅
+- Calton hill (viewpoint) ✅
+- Ross fountain ✅
+- Royal Botanic Garden Edinburgh ✅
+- Leith/portobello ✅
+- stockbridge market ✅
+- Ghost tour ✅
+- Swanston farms - highland cows ✅
+- Go to a race🏇 ✅
+
+
+    </p>
+
+    <img src="arthursseat.JPG" alt="Arthur's Seat" title="Arthur's Seat at Sunset" width="400">
+    <img src="deansvillage.JPG" alt="Dean's Village" title="Dean's Village" width="400">
+    <img src="nationalmus.JPG" alt="National Museum" title="National Museum of Art" width="400">
+    <img src="oldcollege.JPG" alt="Old College" title="Old College Courtyard" width="400">
+    <img src="publiclib.JPG" alt="Public Library" title="Edinburgh Public Library" width="400">
+    <img src="vennel.JPG" alt="The Vennel" title="Castle View from the Vennel" width="400">
+
+
+</body>
+</html>

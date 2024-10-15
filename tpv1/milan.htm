@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan</title>
+
+    <style>
+        div#banner {
+                    background:url(header.jpeg);
+                    padding: 4%;
+                }
+        
+                h1#heading {
+                    color: rgb(138, 193, 161);
+                    font-family: Arial;
+                    font-weight: bold;
+                    text-align: center;
+                }
+        
+                /* Start of the menu styles */
+                .topnav {
+                    background-color: rgb(248, 224, 254);
+                    overflow: hidden;
+                    font-family: 'Lucida Handwriting';
+                }
+        
+                .topnav a {
+                    float: left;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 40px;
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+        
+                .active {
+                    background-color: rgb(239, 196, 250);
+                    color: white;
+                }
+        
+                .dropdown {
+                    float: left;
+                    overflow: hidden;
+                }
+        
+                .dropdown .dropdownbutton {
+                    font-size: 1em;
+                    border: none;
+                    outline: none;
+                    color: black;
+                    padding: 14px 40px;
+                    font-family: inherit;
+                    background-color: inherit;
+                    margin: 0;
+                }
+        
+                .dropdowncontent {
+                    position: absolute;
+                    display: none;
+                    background-color: white;
+                    z-index: 1;
+                }
+        
+                .dropdown:hover .dropdowncontent {
+                    display: block;
+                }
+        
+                .dropdowncontent a {
+                    float: none;
+                    display: block;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: 0.75em;
+                }
+        
+                .topnav a:hover,
+                .dropdown:hover .dropdownbutton {
+                    background-color: rgb(173, 138, 182);
+                    color: black;
+                }
+        
+                .dropdowncontent a:hover {
+                    background-color: lightgray;
+                    color: black;
+                }
+        
+                .topnav .icon {
+                    display: none;
+                }
+        
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                }
+        
+                .about {
+                    width: 27%;
+                    margin: 3%;
+                    text-align: justify;
+                }
+        
+                @media screen and (max-width:750px)
+                        {
+                            .row{flex-direction:column;}
+                            .about{width:80%; margin-right:auto; margin-left:auto;}
+                        }
+        
+                @media screen and (max-width: 750px) {
+        
+                    .topnav a:not(:first-child),
+                    .dropdown .dropdownbutton {
+                        display: none;
+                    }
+        
+                    .topnav a.icon {
+                        float: right;
+                        display: block;
+                    }
+                }
+        
+                @media screen and (max-width: 750px) {
+                    .topnav.responsive {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .icon {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+        
+                    .topnav.responsive a {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                    }
+        
+                    .topnav.responsive .dropdown {
+                        float: none;
+                    }
+        
+                    .topnav.responsive .dropdowncontent {
+                        position: relative;
+                    }
+        
+                    .topnav.responsive .dropdown .dropdownbutton {
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+            </style>
+        
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("mytopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+</head>
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+    
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+                
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+<p>
+    milan
+
+shop
+- [ ] market in brera 
+- [ ] indaco
+- [ ] thrift shop
+- [ ] squad
+- [ ] alice in vintage
+- [ ] East market
+- [ ] old luxury outlet thingy
+- [ ] via torino (trendy)
+- [ ] corso vercelli  (chic)
+- [ ] corso bueno aires
+- [x] lo specchio di alice
+- [x] surplus
+- [x] humana vintage 
+- [x] Bivio
+
+food
+- [ ] bentoteca (asian)
+- [ ] langosteria (seafood, fancy)
+- [ ] giolina (pizza)
+- [ ] takumi ramen kitchen 
+- [x] la gioia (tiramisu)
+- [x] felice a testaccio 
+
+bars/clubs 
+- [ ] bar basso
+- [ ] Cafe Gucci
+- [ ] moebius 
+- [ ] tempio del futuro perduto (techno)
+- [ ] officina
+<img src="oficina.JPG" alt="Oficinia" title="Oficina Bar" width="400">
+- [ ] martini bar
+- [ ] maggazini
+- [x] gattopardo
+- [x] alcatraz
+- [x] nottingham forest
+<img src="nottingham.JPG" alt="Nottingham Forest" title="Nottingham Forest Bar" width="400">
+- [x] n’ombra de vin (wine night)
+
+proper stores
+- [ ] frip milano
+
+cafes
+- [ ] orsonero coffee
+- [ ] fola
+- [ ] onest
+- [ ] serra di quartiere 
+- [ ] Pan
+- [ ] terroir 
+- [ ] loste 
+- [ ] fondazione giangiacomo feltrinelli 
+- [ ] tone. — bread lab
+- [ ] tipografia alimentare (cinnamon rolls)
+
+museums
+- [ ] ADÌ design museum
+- [ ] DaVinci Gardens
+- [ ] museo della scienza e della tecnica
+- [ ] pinacoteca ambrosiana
+- [ ] The Last Supper
+- [ ] Prada Museum
+- [ ] Armani Silos
+- [x] museo del novecento
+- [x] bulgari exhibition 
+<img src="opera.JPG" alt="Opera House" title="Famous Milan Opera House" width="400">
+</p>
+
+<img src="duomo.JPG" alt="Duomo" title="Duomo in Milan" width="400">
+<img src="maggio.JPG" alt="Maggio Plaza" title="Piazza Ventiquattro Maggio" width="400">
+<img src="oldtram.JPG" alt="Old Tram" title="Inside Old Tram" width="400">
+
+
+</body>
+</html>
