@@ -12,34 +12,41 @@
         </style>
 
         <script type="text/javascript">
-             function doMath(aria) {
-                event.preventDefaul();
+             
+            function doMath(aria)
+            {
+                event.preventDefault();
                 var myf, mynum1, mynum2;
                 myf = document.getElementById("f");
                 mynum1 = myf.num1.value;
                 mynum2 = myf.num2.value;
-                if ((mynum1 == "") || (mynum2 == ""))
-                {
-                    alert("Please enter value into both fields");
-                }
-                else if ((isNan(mynum1) == true) || (isNan(mynum2) == true)) {
-                    alert("Please enter numerial values only")
-                } 
-                else
-                {
-                    mynum1 = parseFloat(mynum1);
-                    mynum2 = parseFloat(mynum2);
-                        if (aria == "A")
-                    myf.res.value = mynum1 + mynum2;
-                        else if (aria == "S")
-                    myf.res.value == mynum1 - mynum2;
-                        else if (aria == "M")
-                    myf.res.value == mynum1 * mynum2
-                        else
-                    myf.res.value = mynum1 / mynum2;
-                }
-             }
+               if ( (mynum1 == "") || (mynum2 == "") )
+               { 
+                alert ("Please enter values in both fields");
+               }
+               else if ( (isNaN(mynum1) == true) || (isNaN(mynum2) == true) )
+               {
+                alert ("Please enter numerical values only")
+               }
              
+             else
+             {
+                mynum1 = parseFloat(mynum1);
+                mynum2 = parseFloat(mynum2);
+
+            if (aria == "a")
+                myf.res.value = mynum1 + mynum2;
+            else if (aria == "s")
+            myf.res.value = mynum1 - mynum2;
+            else if (aria == "m")
+            myf.res.value = mynum1 * mynum2;
+            else
+            myf.res.value = mynum1 / mynum2;
+               /*my.res.value = parseFloat (myf.num1.value) + parseFloat (myf.num2.value)
+               
+               */ 
+                } 
+            }
                   
 
         
@@ -51,7 +58,7 @@
     <body>
 	    <!-- Your HTML goes here -->
         <h1>Simple Calculator</h1>
-        <form method="POST" action="">
+        <form id="f"  method="POST" action="">
             <p>
                 <input class="a" type="text" name="num1" placeholder="Enter.." size="7"/>
                 &nbsp;&nbsp;&nbsp;
@@ -70,10 +77,10 @@
                 </select>
             </p>
             <p>
-                <button class="a" id="A" onclick="doMath(this.id)">Add</button> &nbsp;&nbsp; 
-                <button class="a" id="S" onclick="doMath(this.id)">Subtract</button>&nbsp;&nbsp; 
-                <button class="a" id="M" onclick="doMath(this.id)">Multiply</button>&nbsp;&nbsp; 
-                <button class="a" id="D" onclick="doMath(this.id)">Divide</button>
+                <button id="a" class="a" onclick="doMath(this.id)" >Add</button> &nbsp;&nbsp; 
+                <button id="s" class="a" onclick="doMath(this.id)" >Subtract</button>&nbsp;&nbsp; 
+                <button id="m" class="a" onclick="doMath(this.id)" >Multiply</button>&nbsp;&nbsp; 
+                <button id="d" class="a" onclick="doMath(this.id)" >Divide</button>
             </p>
             
             
