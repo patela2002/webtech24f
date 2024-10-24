@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Homework 3 - processing forms</title>
+
+	<style>
+		/* Your styles go here */
+		form {
+			background-color: silver;
+			font-family: Arial;
+			color: Navy;
+			padding-left: 50px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-right: auto;
+			margin-left: auto;
+			width: 60%;
+		}
+
+		.but {
+			width: 200px;
+			height: 60px;
+			background-color: magenta;
+			color: black;
+		}
+
+		p#desc {
+			margin: 50px 200px;
+			font-family: cursive;
+		}
+
+		h3 {
+			font-family: lucida handwriting;
+			font-size: 3em;
+			text-align: center;
+		}
+	</style>
+
+	<script>
+		/* Your JavaScript goes here */
+		function showDollar() {
+
+			var myfrm, myproduct, myquantity;
+			myfrm = document.getElementById("pricefrm");
+			myproduct = myfrm.product.value;
+			myproduct = myproduct.toLowerCase();
+			myquantity = myfrm.quantity.value;
+
+			/* Given the following variables for a form with 3 fields, give me a JavaScript code so that the user can type one of 3 products: Milk, Apple, or Fish. 
+			Alert the user if they do not enter a value, and alert them if it's not one of the 3 options.*/
+			if (myproduct === "") {
+				alert("Please enter a product.");
+			} else if (myproduct !== "milk" && myproduct !== "apple" && myproduct !== "fish") {
+				alert("Please enter Milk, Apple, or Fish.");
+			}
+			/* For the second field, the user needs to enter a quantity. Alert the user if the field is empty or non-numeric.*/
+			else if (myquantity === "") {
+    			alert("Please enter a quantity.");
+			} 
+			else if (isNaN(myquantity)) {
+    			alert("Please enter a numerical quantity.");
+			}
+			/*If the user enters a product and quantity correctly, the following costs are: 1 bottle of milk is $3.50;
+			one apple is $0.99 one pound of fish is $5.99 and show the amount owed in the third field. Make sure the amount
+			is shown with a prefixed dollar sign, and only 2 decimal places. */
+			else {
+            	let amountDue;
+            	if (myproduct == "milk") {
+                	event.preventDefault();
+                	amountDue = parseFloat(myquantity) * 3.50;
+           		} else if (myproduct == "apple") {
+                	event.preventDefault();
+                	amountDue = parseFloat(myquantity) * 0.99;
+            	} else if (myproduct == "fish") {
+                	event.preventDefault();
+                	amountDue = parseFloat(myquantity) * 5.99;
+            	}
+            	myfrm.AmtDue.value = "$" + amountDue.toFixed(2);
+        	}
+		}
+	</script>
+</head>
+
+<body>
+	<!-- Your HTML goes here -->
+	<h3> Homework 3</h3>
+	<p id="desc">
+		The form given below has 3 fields.
+		Let us assume that the user will type in the name of one of 3 products: Milk, Apple, or Fish.
+		The user may enter these using any mix of cases, so be aware.
+		You need to check to ensure that the user enters a value.
+		If it is not one of these 3, let the user know.
+		Then the user will enter a quantity.
+		You need to check to ensure that a quantity is entered (you may assume that 0 is a valid quality) and that the
+		value is numeric.
+		Once validated, use the following costs
+		- 1 bottle of milk is $3.50;
+		one apple is $0.99
+		one pound of fish is $5.99
+		and show the amount owed in the third field.
+		All of this should be done when the appropriate button is pressed.
+		The amount must be shown with 2 decimal places and prefixed with a $ (dollar) sign.
+	</p>
+	<form id="pricefrm" action="" method="POST">
+		<p>
+			<input type="text" name="product" size="20" placeholder="Enter product..." />
+			&nbsp; &nbsp;&nbsp;
+			<input type="text" name="quantity" size="20" placeholder="Enter quantity.." />
+		</p>
+		<p>
+			<input type="text" name="AmtDue" size="20" placeholder="show amount due" />
+		</p>
+		<p>
+			<input onclick="showDollar()" class="but" type="submit" name="submit" value="What Do I Owe" />
+			&nbsp; &nbsp;&nbsp;
+			<input class="but" type="reset" name="reset" value="Clear All" />
+		</p>
+	</form>
+<h2>My Self-Reflection: Me vs. CoPilot</h2>
+<p>
+	My solution in part 1 differs from the coPilot solution in 3 ways. Firstly, when setting things equal to, or not equal to, coPilot adds one more "=" than I put in my text.
+	Secondly, the coPilot code separated the instructions for the same fields into two "else ifs". This might have been because of the way I asked for it on the engine, but that was a difference.
+	Third, in the final part coPilot uses a "let" function that adds the dollar sign and 2 decimal place rule to all of the parts at once. In my version, I added it in each section. 
+</p>
+</body>
+
+</html>
