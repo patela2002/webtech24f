@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementsByClassName</title>
+
+    <style>
+        div {
+            padding: 3%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+        div.odd {
+            border: 3px solid red;
+        }
+
+        div.even {
+            border: 3px solid green;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function doOdd() {
+            const myodds = document.getElementsByClassName("odd");
+            const myevens = document.getElementsByClassName("even");
+            var i;
+            for (x=0; x < myodds.length; ++x) {
+                myodds[x].style.backgroundColor = "lime";
+            }
+            for (x=0; x < myevens.length; ++x) {
+                myevens[x].style.backgroundColor = "yellow";
+            }
+        }
+        function doEven () {
+            const myodds = document.getElementsByClassName("odd");
+            const myevens = document.getElementsByClassName("even");
+            var i;
+            for (x=0; x < myodds.length; ++x) {
+                myodds[x].style.backgroundColor = "pink";
+            }
+            for (x=0; x < myevens.length; ++x) {
+                myevens[x].style.backgroundColor = "orange";
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="odd" onclick="doOdd()">
+
+    </div>
+    <div class="even" onclick="doEven()">
+
+    </div>
+    <div class="odd" onclick="doOdd()">
+
+    </div>
+    <div class="even" onclick="doEven()">
+
+    </div>
+    <div class="odd" onclick="doOdd()">
+
+    </div>
+    <div class="even" onclick="doEven()">
+
+    </div>
+</body>
+
+</html>
