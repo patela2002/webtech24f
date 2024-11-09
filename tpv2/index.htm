@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aria's Travel Blog - The Ultimate Girls Trip Travel Guide with tips and itineraries for budget travel." />
+    <meta name="keywords"
+        content="Travel, Blog, Girls Trip, Budget Travel, Itineraries, Morocco, Budapest, Greece, Vienna, Edinburgh, Milan" />
+    <meta name="author" content="Aria Patel" />
+    <title>Aria's Travel Blog</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <style>
+        body {
+            background-color: rgba(253, 255, 226, 0.935);
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .about {
+            width: 27%;
+            margin: 3%;
+            text-align: justify;
+        }
+
+        #welcome {
+            position: relative;
+            display: block;
+            color: rgb(38, 26, 5);
+            font-size: 45px;
+            padding: 20px;
+            text-align: center;
+            padding: 10%;
+            font-family: 'Baskerville';
+            font-weight: bold;
+        }
+
+        #video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 98.5%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            border: 10px rgb(255, 255, 182) ridge;
+        }
+
+        h2#buda {
+            font-family: 'Baskerville';
+            color: rgb(38, 26, 5);
+            text-align: center;
+        }
+
+
+        p#abme {
+            font-family: 'Baskerville';
+            text-align: center;
+            font-size: 18px;
+            margin-right: 150px;
+            margin-left: 150px;
+        }
+
+        img#me {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            border: 5px ridge black;
+        }
+
+        h1#featdest {
+            font-family: 'Baskerville';
+            color: rgb(38, 26, 5);
+            text-align: center;
+
+        }
+
+        p#click {
+            font-family: 'Baskerville';
+            color: rgb(38, 26, 5);
+            text-align: center;
+        }
+
+        div#last {
+            background-color: rgb(250, 215, 221);
+            padding: 4%;
+            border: 10px rgb(255, 255, 182) ridge;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        div#me {
+            background-color: rgb(250, 215, 221);
+            padding: 4%;
+            margin-left: 100px;
+            margin-right: 100px;
+            border: 10px rgb(255, 255, 182) ridge;
+        }
+        .enter {
+            border: 10px rgb(255, 255, 182) ridge;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("mytopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <audio autoplay loop>
+        <source src="background.mp3" type="audio/mp3" />
+    </audio>
+
+    <!--Add large image here with text on top-->
+    <p id="welcome">
+        <video id="video-bg" autoplay muted loop>
+            <source src="video.MOV" type="video/mp4" />
+        </video>
+        Welcome to my page!
+    </p>
+    <!--Add homebase: mini about me, link to bigger about me-->
+    <div id="me">
+        <h1 id="featdest">Who Am I?</h1>
+        <p id="abme">
+
+            Follow along this page for some valuable tips and itineraries for those travelling on a budget! I am a
+            senior in
+            college,
+            sharing my stories from my year abroad. I hope you enjoy this site as much as I enjoyed making it!
+
+            Click on me to learn more about me!
+            <img id="me" src="aboutme.JPG" alt="myimage" title="Aria in Milan" usemap="#aria" width="300">
+            <map name="aria">
+                <area shape="rect" coords="188,400,45,165" href="aboutme.htm" alt="Aria">
+            </map>
+        </p>
+    </div>
+
+    <!--This section will be Featured Destinations-->
+    <div id="last">
+        <h1 id="featdest">Featured Destinations</h1>
+        <div class="row">
+            <div class="about">
+
+                <h2 id="buda">Morocco</h2>
+                <p id="click">
+                    <img class="enter" src="door.JPG" alt="Moroccan Sites" title="Picturesque Door" usemap="#door" width="300">
+                    <map name="door">
+                        <area shape="rect" coords="32,58,244,350" href="morocco.htm" alt="Door">
+                    </map> </br>
+                    Click on the door for an enticing week long trip to Morocco!
+                </p>
+            </div>
+            <div class="about">
+                <h2 id="buda">Budapest</h2>
+                <p id="click">
+                    <img class="enter" src="buda.JPG" alt="budapest" title="Buda Castle" usemap="#buda" width="300">
+                    <map name="buda">
+                        <area shape="rect" coords="0,54,299,379" href="budapest.htm" alt="Budapest">
+                    </map> </br>
+                    Click on the castle to find the perfect itinerary for a weekend in Budapest!
+                </p>
+            </div>
+            <div class="about">
+                <h2 id="buda">Greece</h2>
+                <p id="click">
+                    <img class="enter" src="oia.JPG" alt="santorini" title="Santorini Blue Dome" usemap="#blue" width="300">
+                    <map name="blue">
+                        <area shape="rect" coords="8,216,198,327" href="greece.htm" alt="Greece">
+                    </map> </br>
+                    Click on one of the Blue Domes for a 10 day itinerary around the islands of Greece!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for The Ultimate Girls Trip Travel Guide. Get in touch with us for more information.">
+    <meta name="keywords" content="travel, girls trip, contact, itineraries, recommendations">
+    <meta name="author" content="Aria Patel">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <style>
+        body {
+            background-color: rgba(253, 255, 226, 0.935);
+        }
+
+        h1#info {
+            font-family: 'Baskerville';
+            font-size: 25px;
+            text-align: center;
+        }
+
+        p,
+        ul {
+            font-family: 'Baskerville';
+            font-size: 18px;
+        }
+
+        h2 {
+            font-family: 'Baskerville';
+            font-size: 25px;
+            text-align: center;
+        }
+
+        div#form {
+            background-color: rgb(250, 215, 221);
+            border-color: rgb(255, 255, 182);
+            border-width: 10px;
+            border-style: ridge;
+            margin: 10px auto;
+            width: 60%;
+            padding-left: 10px;
+        }
+
+        .submit {
+            background-color: lavender;
+            border: black ridge 3px;
+        }
+
+        .reset {
+            background-color: lavender;
+            border: black ridge 3px;
+        }
+
+        div#inf {
+            margin-left: 280px;
+            margin-right: 280px;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border: 10px rgb(255, 255, 182) ridge;
+            background-color: rgb(250, 215, 221);
+        }
+    </style>
+
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("mytopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+
+    <h1 id="info"> My Information </h1>
+    <div id="inf">
+        <p>
+            Address: 87 Map Hill Dr, Babson Park, MA 02457 </br>
+            School Email: apatel9@babson.edu </br>
+            Personal Email: patela2002@gmail.com </br>
+            Phone: (856) 628-2055 </br>
+        </p>
+    </div>
+    <h2> Get in touch!</h2>
+    <div id="form">
+        <form>
+            <p>
+                <label for="myname">Please Enter Your Name:</label>
+                <input type="text" name="myname" size="20" maxlength="40" placeholder="Type Here..." />
+            </p>
+
+            <p>
+                What best describes you? </br>
+                <input id="student" type="checkbox" name="traveller" /> Student Abroad </br>
+                <input id="solo" type="checkbox" name="traveller" /> Solo Traveller </br>
+                <input id="group" type="checkbox" name="traveller" /> Group Trip Planner </br>
+                <input id="other" type="checkbox" name="traveller" /> Other </br>
+            </p>
+
+            <p>
+                How many trips did this page help you with?
+                <select name="class">
+                    <option value="selectone">(select one)</option>
+                    <option value="6">6</option>
+                    <option value="4-5">4-5</option>
+                    <option value="2-3">2-3</option>
+                    <option value="0-1">0-1</option>
+                </select>
+            </p>
+
+            <p>
+                Please enter any suggestions for the page: </br>
+                <textarea rows="10" cols="47" name="suggestions" placeholder="Write Here..."></textarea>
+            </p>
+
+            <p>
+                <input class="submit" type="submit" name="submit" value="Submit" />
+                <input class="reset" type="reset" name="reset" value="Reset" />
+            </p>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
