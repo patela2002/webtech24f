@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CS-19 InClass</title>
-	<style>
-        p, h3 {text-align:center;}
-        img {width:30%; border:5px ridge red}
-        button {width:150px; height:40px; 
-                background-color:green;; font-family:arial; 
-                color:yellow;}
-        div#b{text-align:center;}
-	</style>
-    
-    
+    <style>
+        p,
+        h3 {
+            text-align: center;
+        }
+
+        img {
+            width: 30%;
+            border: 5px ridge red
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: green;
+            ;
+            font-family: arial;
+            color: yellow;
+        }
+
+        div#b {
+            text-align: center;
+        }
+    </style>
+
+
     <script type="text/javascript">
-        
-       var myimages = new Array("tiger5.jpg", "tiger6.jpg", "tiger7.jpg", "tiger8.jpg"); 
-       var mycolors = new Array("yellow", "lime","green", "orange");
-       var mycaps = new Array("This is WebTech", "This is Fun", "abcd", "xyz")
-       var counter = 0;
 
-       function showSlides()
-       {
-            var x = document.getElementById("daimg");
-            var y = document.getElementById("myhead");
-            x.src = myimages[counter];
-            x.style.borderColor = mycolors[counter];
-            y.innerHTML = mycaps[counter];
-            ++ counter; 
-            
-            if (counter > myimages.length -1)
-            {
-                counter = 0;
-            }
-            setTimeout("showSlides()", 5000)
+        var myimages = new Array("tiger5.jpg", "tiger6.jpg", "tiger7.jpg", "tiger8.jpg");
+        var mycolors = new Array("yellow", "lime", "green", "orange");
+        var mycaps = new Array("This is WebTech", "This is Fun", "abcd", "xyz")
+        var counter = 0;
 
-       }
-       
+        function showSlides() {
+            var y = document.getElementById("daimg");
+            c = Math.floor(Math.random() * myimages.length);
+            y.src = myimages[c];
+            setTimeout("showSlides()", 2000);
+
+            /* var x = document.getElementById("daimg");
+             var y = document.getElementById("myhead");
+             x.src = myimages[counter];
+             x.style.borderColor = mycolors[counter];
+             y.innerHTML = mycaps[counter];
+             ++ counter; 
+             
+             if (counter > myimages.length)
+             {
+                 counter = 0;
+             }
+             setTimeout("showSlides()", 2000) */
+
+        }
+
 
 
 
     </script>
 </head>
+
 <body>
     <p>
-    
-    <img id="daimg" src="tiger5.jpg" alt="Slide Show of Tigers" title="Tigers"/>
+
+        <img id="daimg" src="tiger5.jpg" alt="Slide Show of Tigers" title="Tigers" />
     <h4 id="myhead"></h4>
     </p>
-   
+
     <div id="b">
         <button onclick="showSlides()">Click to stop/resume</button>
     </div>
-     
+
 </body>
+
 </html>

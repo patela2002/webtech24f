@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interesting Javascript Functions/Constructions</title>
+    <style>
+
+    </style>
+    <script type="text/javascript">
+        function showMe() {
+            const myprod = document.querySelector('input[name="prod"]').value.trim().toLowerCase();
+            const myqty = document.forms["f"]["qty"].value;
+            /* const myqty = document.forms[0]["qty"].value*/
+            var myamtdue = document.forms["f"]["amtdue"];
+            const pricelist = { car: 35000, mocycle: 15000, cycle: 5000 };
+            const myset = ["car", "mocycle", "cycle"];
+            /* if (!myset.includes(myprod))
+            if (!myprod in myset) */
+
+            if (isNaN(myqty) || !(myqty)) {
+                alert("Please enter a valid value for quantity");
+                return; 
+            }
+
+            if (!(myprod in pricelist)) {
+                alert("Please enter a valid product");
+            }
+
+            else {
+                let amt;
+                amt = myqty * pricelist[myprod];
+                event.preventDefault();
+                myamtdue.value = "$" + amt.toFixed(3);
+
+                alert(pricelist[myprod]);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form id="f" method="POST" action="">
+        <p>
+            Product: &nbsp; <input type="text" name="prod" size="10" />
+        </p>
+        <p>
+            Quantity: &nbsp; <input type="text" name="qty" size="10" />
+        </p>
+        <p>
+            Amount Due: &nbsp; <input type="text" name="amtdue" size="10" />
+        </p>
+        <p>
+            <input onclick="showMe()" type="submit" name="submit" value="Show Me" />
+            <input type="reset" name="reset" value="Clear Me" />
+        </p>
+    </form>
+
+</body>
+
+</html>
