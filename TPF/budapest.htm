@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Ultimate Girls Trip Travel Guide to Budapest. Discover the best places to stay, eat, and visit in Budapest.">
+    <meta name="keywords"
+        content="Budapest, travel guide, girls trip, travel tips, Budapest attractions, Budapest nightlife">
+    <meta name="author" content="Aria Patel">
+    <title>Budapest</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <style>
+        body {
+            background-color: rgba(253, 255, 226, 0.935);
+        }
+
+        p {
+            font-family: 'Baskerville';
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        img#bud,
+        img#pro {
+            float: left;
+            margin: 15px;
+            border: 10px rgb(255, 255, 182) ridge;
+        }
+
+        img#bas {
+            float: right;
+            margin: 15px;
+            border: 10px rgb(255, 255, 182) ridge;
+        }
+
+
+        h1#pest {
+            background: url(bridge.JPG) center no-repeat fixed;
+            padding: 7%;
+            text-align: center;
+            color: rgb(38, 26, 5);
+            font-size: 40px;
+            font-family: 'Baskerville';
+            margin-top: 0px;
+            border: 10px rgba(253, 255, 226, 0.935) dashed;
+        }
+
+        hr {
+            margin-top: 200px;
+        }
+
+        h3#mover {
+            position: absolute;
+        }
+
+        .flip-horizontal {
+            transform: scaleX(-1);
+        }
+    </style>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.arctext.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("h1#pest").click(function () {
+                $(this).arctext({ radius: 200, dir: 1 });
+            });
+        });
+
+        function myFunction() {
+            var x = document.getElementById("mytopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function chgColor() {
+            document.getElementById("pest").style.color = "pink";
+        }
+        function chgBack() {
+            document.getElementById("pest").style.color = "rgb(38, 26, 5)";
+        }
+
+        const mytext = new Array("1.5 Day Trip!")
+        var pos = 800, ctr = 0;
+
+        function scrollText() {
+            document.getElementById("mover").innerHTML = mytext[ctr];
+            document.getElementById("mover").style.left = pos + "px";
+            pos -= 1; /* pos = pos - 1 */
+            if (pos < 100) {
+                pos = 800;
+                ++ctr; /* ctr = ctr + 1 */
+                if (ctr >= mytext.length) {
+                    ctr = 0;
+                }
+            }
+            setTimeout("scrollText()", 5);
+        }
+
+        function flipImage() {
+            var image = document.getElementById('bas');
+            image.classList.toggle('flip-horizontal');
+        }
+
+        function imageFlip() {
+            var image = document.getElementById('bud');
+            image.classList.toggle('flip-horizontal');
+        }
+
+        function imgFli() {
+            var image = document.getElementById('pro');
+            image.classList.toggle('flip-horizontal');
+        }
+
+    </script>
+
+</head>
+
+<body onload="scrollText()">
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <h1 id="pest" onmouseover="chgColor()" onmouseout="chgBack()">Budapest</h1>
+
+    <div>
+        <h3 id="mover">ABC</h3>
+    </div>
+
+    </br>
+
+    <p>
+        <img id="bud" onmouseover="imageFlip()" src="stcharles.JPG" alt="St. Charles" title="St. Charles Church"
+            width="300">
+        Budapest was the most underrated city I visited during my time abroad. Lots of things that you might hear is
+        that there isn't much to do. That could not be more wrong. During our stay we stayed at <a
+            href="https://www.wombats-hostels.com/budapest" target="_blank">Wombat's City Hostel</a>.
+        This was a great place for such a short trip, and it was very accommodating! We got into Budapest very late, and
+        took a longgg bus
+        ride from the airport to the main city. The location of the hostel was perfect, easy to get to, and central to
+        all the main attractions.
+
+    </p>
+    <p>
+        The next day we woke up, and it was freezing. We put on our many layers and went to brunch. We ate at a
+        restaurant
+        close by but also on our list called <a href="https://cirkuszbp.hu/" target="_blank">Circusz</a>. The food was
+        to die for, and the ambiance
+        was
+        energetic! If you want to eat here, I recommend allotting enough time, as there is a long wait. But, they do
+        move the tables fast.
+        <img id="bas" onmouseover="flipImage()" src="bastion.JPG" alt="Fisherman's Bastion"
+            title="Aria at Fisherman's Bastion" width="300">
+        After eating we decided to hit our first Christmas market! We went to St. Stephen's Basilica, a gorgeous
+        monument with a festive
+        Christmas market in front. It was so fun walking around the market, looking at the different souvenirs and
+        Christmas goodies. One thing
+        you must try is the spiked hot chocolate!
+
+
+    </p>
+    <p>
+        From the basilica we walked over the danube river and got to stand in between Buda and Pest. If you didn't know
+        the city
+        is named from the two towns being officially merged. It was a very cloudy and snowy day, but still beautiful
+        nonetheless.
+        We walked from there to the Buda Castle, where they had gondola trips going up the hill. There is a way to walk
+        up the hill,
+        which I would recommend if the weather permits. The Buda Castle was beautiful, with lots of stunning
+        architecture. To take a
+        break from the cold, we decided to go into the National Gallery of Budapest, which was gorgeous! There were so
+        many different
+        types of artwork, and it was really nice walking around and warming up!
+
+    </p>
+    <p>
+
+        The last stop of the day, before changing for dinner, was Fisherman's Bastion. Lucky for us, there was another
+        Christmas Market!
+
+        This place was so nice to walk around, cutely decorated for Christmas, and not too busy. It also had a gorgeous
+        view of
+        the famous parliament building, a great photo spot! We walked down the Christmas market, and also crossed off
+        another church, Matthias Church!
+
+    </p>
+
+    <p>
+
+        <img id="pro" onmouseover="imgFli()" src="boattour.JPG" alt="Boat Tour" title="Prosecco Boat Tour View"
+            width="300">
+        Now into the night! Budapest nightlife was one of my favorites throughout my trips. We started off the night by
+        going to dinner at
+        <a href="https://www.babkabudapest.hu/en/" target="_blank">Babka</a>, a last minute decision. We didn't have any
+        reservations, but were able to get some
+        seats by the window!
+        The food was to die for. After dinner, we walked over to the prosecco boat tour, which was easily the highlight
+        of our trip!
+        These are really easy to book, and essential for any trip to Budapest. We booked ours through GetYourGuide, and
+        chose a $30 option
+        for unlimited prosecco, and some charcuterie! The views are amazing and you get the perfect photo op with the
+        main parliament building.
+
+    </p>
+
+    <p>
+        After the boat tour, we were not done. We had heard about this ruins bar, Szimpla Kertz, which was so cool!
+        The drinks are cheap, and the atmosphere is very unique. Each room had a different design pulling from different
+        ruins. After a few drinks here, and meeting a lot of new faces. People in Budapest are pretty friendly! We went
+        to a club, Instant-Fogas Komplexum. This club was unique because it has 18 bars, 6 rooms, and 2 dance floors.
+        Any kind of music you like, they are playing it! It's a great experience with lots of theatrical decor.
+    </p>
+</body>
+
+</html>

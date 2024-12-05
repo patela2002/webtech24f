@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Ultimate Girls Trip Travel Guide to Milan, including shopping recommendations, restaurants, nightlife, and museums.">
+    <meta name="keywords" content="Milan, travel guide, shopping, restaurants, nightlife, museums, girls trip">
+    <meta name="author" content="Aria Patel">
+    <title>Milan</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <style>
+        body {
+            background-color: rgba(253, 255, 226, 0.935);
+        }
+
+        h1#mil {
+            background: url(duomo.JPG) center no-repeat fixed;
+            padding: 7%;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-family: 'Baskerville';
+            margin-top: 0px;
+            border: 10px rgba(253, 255, 226, 0.935) dashed;
+        }
+
+        p,
+        ul,
+        tr,
+        li {
+            font-family: 'Baskerville';
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        h2.eat {
+            font-family: 'Baskerville';
+            font-size: 30px;
+            text-align: center;
+        }
+
+        p.eat {
+            text-align: center;
+            padding: 0px 5px 20px 5px;
+        }
+
+        div.shop {
+            margin-left: 330px;
+            margin-right: 330px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border: 10px rgb(255, 255, 182) ridge;
+            background-color: rgb(250, 215, 221);
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 75%;
+            margin-right: auto;
+            margin-left: auto;
+            border-collapse: collapse;
+        }
+
+        table,
+        td {
+            border: 2px black solid;
+            text-align: center;
+            background-color: rgb(253, 255, 226);
+        }
+
+        th {
+            text-align: center;
+            background-color: rgb(250, 215, 221);
+            border: 2px black solid;
+        }
+
+        img#todo {
+            float: left;
+            margin-left: 5px;
+            border: 10px rgb(255, 255, 183) ridge;
+        }
+
+        img#todo2 {
+            float: right;
+            margin-right: 5px;
+            border: 10px rgb(255, 255, 183) ridge;
+        }
+
+        img#todo3 {
+            float: left;
+            margin-left: 5px;
+            border: 10px rgb(255, 255, 183) ridge;
+        }
+
+        img#todo4 {
+            float: right;
+            margin-right: 5px;
+            border: 10px rgb(255, 255, 183) ridge;
+        }
+
+        img#todo5 {
+            float: left;
+            margin-left: 5px;
+            border: 10px rgb(255, 255, 183) ridge;
+        }
+
+        img#todo6 {
+            float: right;
+            margin-right: 5px;
+            border: 10px rgb(255, 255, 183) ridge;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.arctext.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("h1#mil").click (function(){
+                $(this).arctext({radius:200, dir:1});
+            });
+        });
+        
+        function myFunction() {
+            var x = document.getElementById("mytopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function chgColor() {
+            document.getElementById("mil").style.color = "pink";
+        }
+        function chgBack() {
+            document.getElementById("mil").style.color = "white";
+        }
+
+        function clickImage() {
+            const myimg2 = document.getElementById("todo");
+            if (myimg2.src.match("maggio.JPG") == "maggio.JPG") {
+                myimg2.src = "centrale.JPG";
+            }
+            else {
+                myimg2.src = "maggio.JPG";
+            }
+        }
+
+        function imageChg() {
+            const myimg = document.getElementById("todo2");
+            if (myimg.src.match("oldtram.JPG") == "oldtram.JPG") {
+                myimg.src = "navigli.JPG";
+            }
+            else {
+                myimg.src = "oldtram.JPG";
+            }
+        }
+
+        function chgImg() {
+            const myimg3 = document.getElementById("todo3");
+            if (myimg3.src.match("oficina.JPG") == "oficina.JPG") {
+                myimg3.src = "gattopardo.JPG";
+            }
+            else {
+                myimg3.src = "oficina.JPG"
+            }
+        }
+
+        function chgImage() {
+            const myimg4 = document.getElementById("todo4");
+            if (myimg4.src.match("nottingham.JPG") == "nottingham.JPG") {
+                myimg4.src = "pen.JPG";
+            }
+            else {
+                myimg4.src = "nottingham.JPG";
+            }
+        }
+
+        function changeImg() {
+            const myimg5 = document.getElementById("todo5");
+            if (myimg5.src.match("opera.JPG") == "opera.JPG") {
+                myimg5.src = "spa.JPG";
+            }
+            else {
+                myimg5.src = "opera.JPG";
+            }
+        }
+
+        function changeImage() {
+            const myimg6 = document.getElementById("todo6");
+            if (myimg6.src.match("museum.JPG") == "museum.JPG") {
+                myimg6.src = "church.JPG";
+            }
+            else {
+                myimg6.src = "museum.JPG";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <h1 id="mil" onmouseover="chgColor()" onmouseout="chgBack()">Milan</h1>
+
+    <h2 class="eat">Shopping Recommendations</h2>
+    <p class="eat">
+        Milan is known for its amazing vintage shops. The checklist below is the perfect list for you!
+    </p>
+    <p>
+        <img id="todo" src="maggio.JPG" alt="Maggio Plaza" title="Piazza Ventiquattro Maggio" width="300"
+            onclick="clickImage()">
+        <img id="todo2" src="oldtram.JPG" alt="Old Tram" title="Inside Old Tram" width="300" onclick="imageChg()">
+    <div class="shop">
+        <li><input type="checkbox" id="shop" name="indaco">Indaco</li>
+        <li><input type="checkbox" id="shop" name="thrift shop">Thrift Shop</li>
+        <li><input type="checkbox" id="shop" name="squad">Squad</li>
+        <li><input type="checkbox" id="shop" name="aliceinvintage">Alice In Vintage</li>
+        <li><input type="checkbox" id="shop" name="eastmarket">East Market </li>
+        <li><input type="checkbox" id="shop" name="viatorino">Via Torino </li>
+        <li><input type="checkbox" id="shop" name="corsovercelli">Corso Vercelli </li>
+        <li><input type="checkbox" id="shop" name="corsobuenoaires">Corso Bueno Aires </li>
+        <li><input type="checkbox" id="shop" name="lospecchio">Lo Specchio di Alica </li>
+        <li><input type="checkbox" id="shop" name="surplus">Surplus </li>
+        <li><input type="checkbox" id="shop" name="humanavintage">Humana Vintage </li>
+        <li><input type="checkbox" id="shop" name="bivio">Bivio </li>
+    </div>
+    </p>
+
+    <h2 class="eat">Restaurants and Food!</h2>
+    <p class="eat">
+        If you're a foodie, Milan is the place to go! Look at the table below for restaurants, bars and cafes!
+
+    <table>
+        <tr>
+            <th>Restaurants</th>
+            <th>Cafes</th>
+        </tr>
+        <tr>
+            <td>Bentoteca (fancy asian)</td>
+            <td>Orsonero Coffee</td>
+        </tr>
+        <tr>
+            <td>Langosteria (fancy seafood)</td>
+            <td>Serra di Quartiere</td>
+        </tr>
+        <tr>
+            <td>Giolina</td>
+            <td>Pan</td>
+        </tr>
+        <tr>
+            <td>Takumi Ramen Kitchen</td>
+            <td>Fondazione Giangiacomo Feltrinelli</td>
+        </tr>
+        <tr>
+            <td>La Gioia</td>
+            <td>Tone. - bread lab</td>
+        </tr>
+        <tr>
+            <td>Felice a Testaccio</td>
+            <td>Tipografia Alimentare</td>
+        </tr>
+    </table>
+    </p>
+
+    <h2 class="eat">Milan Nightlife</h2>
+    <p class="eat">The nightlife in Milan is the perfect combiniation of classy and not so classy...but really, it's
+        just a lot of fun. The list
+        below is the perfect starting point to figure out where you want to spend your nights! </p>
+    <p>
+        <img id="todo3" src="oficina.JPG" alt="Oficinia" title="Oficina Bar" width="300" onclick="chgImg()">
+        <img id="todo4" src="nottingham.JPG" alt="Nottingham Forest" title="Nottingham Forest Bar" width="300"
+            onclick="chgImage()">
+    <div class="shop">
+        <ul>
+            <li>Bars</li>
+            <ul>
+                <li>Bar Basso</li>
+                <li>Cafe Gucci</li>
+                <li>Oficina</li>
+                <li>Nottingham Forest</li>
+                <li>N'ombra de Vin</li>
+                <ul>
+                    <li>The most perfect girls wine night location!</li>
+                </ul>
+            </ul>
+            <li>Night Clubs</li>
+            <ul>
+                <li>Tempio del Futuro Perduto</li>
+                <ul>
+                    <li>For those who might be interested in some techno music</li>
+                </ul>
+                <li>Maggazini</li>
+                <li>Gattopardo</li>
+                <ul>
+                    <li>Must go for the ICONIC chandelier</li>
+                </ul>
+                <li>Alcatraz</li>
+            </ul>
+    </div>
+    </p>
+
+    <h2 class="eat">Museums!</h2>
+    <p class="eat">The artwork in Milan is from another world. There are so many museums throughout the city where
+        you can go enjoy your day,
+        a perfect activity for some of the more rainy, dreary days!
+    </p>
+    <p>
+        <img id="todo5" src="opera.JPG" alt="Opera House" title="Famous Milan Opera House" width="300"
+            onclick="changeImg()">
+        <img id="todo6" src="museum.JPG" alt="Museum" title="Museo del Novecento" width="300" onclick="changeImage()">
+    <div class="shop">
+        <ul>
+            <li>ADÌ Design Museum</li>
+            <li>DaVinci Gardens</li>
+            <li>Museo della Scienza e della Tecnica</li>
+            <li>Pinacoteca Ambrosiana</li>
+            <li>Prada Museum</li>
+            <li>Armani Silos</li>
+            <li>Museo del Novecento</li>
+            <li>Bulgari Exhibition</li>
+            <li>Santa Maria della Grazie</li>
+            <ul>
+                <li>Get tickets early to see the iconic Last Supper painting!</li>
+            </ul>
+        </ul>
+    </div>
+    </p>
+
+
+
+
+</body>
+
+</html>

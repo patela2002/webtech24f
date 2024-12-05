@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact page for The Ultimate Girls Trip Travel Guide. Get in touch with us for more information.">
+    <meta name="keywords" content="travel, girls trip, contact, itineraries, recommendations">
+    <meta name="author" content="Aria Patel">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <style>
+        body {
+            background-color: rgba(253, 255, 226, 0.935);
+        }
+
+        h1#info {
+            font-family: 'Baskerville';
+            font-size: 25px;
+            text-align: center;
+        }
+
+        p,
+        ul {
+            font-family: 'Baskerville';
+            font-size: 18px;
+        }
+
+        h2 {
+            font-family: 'Baskerville';
+            font-size: 25px;
+            text-align: center;
+        }
+
+        div#form {
+            background-color: rgb(250, 215, 221);
+            border-color: rgb(255, 255, 182);
+            border-width: 10px;
+            border-style: ridge;
+            margin: 10px auto;
+            width: 60%;
+            padding-left: 10px;
+        }
+
+        .submit {
+            background-color: lavender;
+            border: black ridge 3px;
+        }
+
+        .reset {
+            background-color: lavender;
+            border: black ridge 3px;
+        }
+
+        div#inf {
+            margin-left: 280px;
+            margin-right: 280px;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border: 10px rgb(255, 255, 182) ridge;
+            background-color: rgb(250, 215, 221);
+        }
+    </style>
+
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("mytopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function showData() {
+            var myfrm, myname, myident, mytrips, mysuggest;
+            myfrm = document.getElementById("myform");
+            myname = myfrm.myname.value;
+            myident = myfrm.traveller.value;
+            mytrips = myfrm.class.value;
+            mysuggest = myfrm.suggestions.value;
+
+            if (myname == "") {
+                alert("Please enter your name");
+            }
+            else if ( (myident != "Student Abroad") && (myident != "Solo Traveller") && (myident != "Group Trip Planner") && (myident != "Other")) {
+                alert("Please enter one of the 4 valid values for travel identity");
+            }
+            else if (mytrips == "selectone") {
+                alert("Please let me know how many trips my site helped you with");
+            }
+            else if (mysuggest = "") {
+                alert("Please add any suggestions you have, or put N/A");
+            }
+            else {
+                event.preventDefault();
+                myfrm.result.value = "Hello, my name is " + myname + ". I am a " + myident + ". This site helped me with " + mytrips + " trips. My suggestions for this site are " + mysuggest + ".";
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <div id="banner">
+        <h1 id="heading">The Ultimate Girls Trip Travel Guide</h1>
+    </div>
+
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Info</a>
+        <div class="dropdown">
+            <button class="dropdownbutton">Itineraries</button>
+            <div class="dropdowncontent">
+                <a href="morocco.htm">Morocco </a>
+                <a href="budapest.htm">Budapest</a>
+                <a href="greece.htm">Greece</a>
+                <a href="vienna.htm">Vienna</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdownbutton">Recommendations</button>
+            <div class="dropdowncontent">
+                <a href="edinburgh.htm">Edinburgh</a>
+                <a href="milan.htm">Milan</a>
+
+            </div>
+        </div>
+        <a href="credits.htm">Credits</a>
+        <a href="sitemap.htm">Sitemap</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+
+    <h1 id="info"> My Information </h1>
+    <div id="inf">
+        <p>
+            Address: 87 Map Hill Dr, Babson Park, MA 02457 </br>
+            School Email: apatel9@babson.edu </br>
+            Personal Email: patela2002@gmail.com </br>
+            Phone: (856) 628-2055 </br>
+        </p>
+    </div>
+    <h2> Get in touch!</h2>
+    <div id="form">
+        <form id="myform">
+            <p>
+                <label for="myname">Please Enter Your Name:</label>
+                <input type="text" name="myname" size="20" maxlength="40" placeholder="Type Here..." />
+            </p>
+
+            <p>
+                What best describes you? (Student Abroad, Solo Traveller, Group Trip Planner, Other) </br>
+                <textarea rows="2" cols="47" name="traveller" placeholder="Write Here..."></textarea>
+            </p>
+
+            <p>
+                How many trips did this page help you with?
+                <select name="class">
+                    <option value="selectone">(select one)</option>
+                    <option value="6">6</option>
+                    <option value="4-5">4-5</option>
+                    <option value="2-3">2-3</option>
+                    <option value="0-1">0-1</option>
+                </select>
+            </p>
+
+            <p>
+                Please enter any suggestions for the page: </br>
+                <textarea rows="10" cols="47" name="suggestions" placeholder="Write Here..."></textarea>
+            </p>
+
+            <p>
+                Your selections will appear here: <br />
+                <textarea name="result" cols="40" rows="3"></textarea>
+            </p>
+
+            <p>
+                <input onclick="showData()" class="submit" type="submit" name="submit" value="Submit" />
+                <input class="reset" type="reset" name="reset" value="Reset" />
+            </p>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
